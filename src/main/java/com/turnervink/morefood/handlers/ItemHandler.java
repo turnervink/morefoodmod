@@ -17,6 +17,10 @@ public class ItemHandler {
     public static Item lettuce;
     public static Item rawOnionRing;
     public static Item onionRing;
+    public static Item beefSandwich;
+    public static Item porkSandwich;
+    public static Item chickenSandwich;
+    public static Item muttonSandwich;
 
     public static void init() {
 
@@ -25,6 +29,10 @@ public class ItemHandler {
         lettuce = new ItemLettuce("lettuce", 3, 3.6F);
         rawOnionRing = new ItemRawOnionRing("raw_onion_ring", 3, 2F, false);
         onionRing = new ItemOnionRing("onion_ring", 4, 3F, false);
+        beefSandwich = new ItemBeefSandwich("beef_sandwich");
+        porkSandwich = new ItemBeefSandwich("pork_sandwich");
+        chickenSandwich = new ItemBeefSandwich("chicken_sandwich");
+        muttonSandwich = new ItemBeefSandwich("mutton_sandwich");
 
     }
 
@@ -35,6 +43,10 @@ public class ItemHandler {
         GameRegistry.register(lettuce);
         GameRegistry.register(rawOnionRing);
         GameRegistry.register(onionRing);
+        GameRegistry.register(beefSandwich);
+        GameRegistry.register(porkSandwich);
+        GameRegistry.register(chickenSandwich);
+        GameRegistry.register(muttonSandwich);
 
     }
 
@@ -45,6 +57,10 @@ public class ItemHandler {
         registerRender(lettuce);
         registerRender(rawOnionRing);
         registerRender(onionRing);
+        registerRender(beefSandwich);
+        registerRender(porkSandwich);
+        registerRender(chickenSandwich);
+        registerRender(muttonSandwich);
 
     }
 
