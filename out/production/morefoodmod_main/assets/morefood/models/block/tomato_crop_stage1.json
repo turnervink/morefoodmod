@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "morefood:blocks/tomatoes_stage_1"
+  }
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "morefood",
+  "name": "More Food Mod",
+  "description": "Add some new tasty treats to Minecraft!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "www.turnerv.ink",
+  "updateUrl": "",
+  "authorList": ["Turner Vink"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
