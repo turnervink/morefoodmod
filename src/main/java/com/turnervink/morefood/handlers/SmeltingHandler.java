@@ -1,5 +1,6 @@
 package com.turnervink.morefood.handlers;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -12,6 +13,7 @@ public class SmeltingHandler {
 
         GameRegistry.addSmelting(ItemHandler.rawOnionRing, new ItemStack(ItemHandler.onionRing), 0);
         GameRegistry.addSmelting(ItemHandler.rawFrenchFries, new ItemStack(ItemHandler.frenchFries), 0);
+        GameRegistry.addSmelting(Items.MILK_BUCKET, new ItemStack(ItemHandler.cheese, 12), 0);
 
     }
 

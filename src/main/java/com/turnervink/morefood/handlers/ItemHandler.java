@@ -25,6 +25,10 @@ public class ItemHandler {
     public static Item chickenSandwich;
     public static Item muttonSandwich;
     public static Item popsicle;
+    public static Item ketchup;
+    public static Item cheese; // I'm just crackers about cheese!
+    public static Item hamburger;
+    public static Item cheeseburger;
 
     public static void init() {
 
@@ -41,6 +45,10 @@ public class ItemHandler {
         chickenSandwich = new ItemBeefSandwich("chicken_sandwich");
         muttonSandwich = new ItemBeefSandwich("mutton_sandwich");
         popsicle = new ItemPopsicle("popsicle", 1, 0.5F, false);
+        ketchup = new ItemKetchup("ketchup");
+        cheese = new ItemCheese("cheese", 2, 2.5F, true);
+        hamburger = new ItemHamburger("hamburger");
+        cheeseburger = new ItemCheeseburger("cheeseburger");
 
     }
 
@@ -59,6 +67,10 @@ public class ItemHandler {
         GameRegistry.register(chickenSandwich);
         GameRegistry.register(muttonSandwich);
         GameRegistry.register(popsicle);
+        GameRegistry.register(ketchup);
+        GameRegistry.register(cheese);
+        GameRegistry.register(hamburger);
+        GameRegistry.register(cheeseburger);
 
     }
 
@@ -77,6 +89,10 @@ public class ItemHandler {
         registerRender(chickenSandwich);
         registerRender(muttonSandwich);
         registerRender(popsicle);
+        registerRender(ketchup);
+        registerRender(cheese);
+        registerRender(hamburger);
+        registerRender(cheeseburger);
 
     }
 

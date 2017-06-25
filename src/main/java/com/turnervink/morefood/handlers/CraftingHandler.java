@@ -68,6 +68,27 @@ public class CraftingHandler {
                 'S', Items.SNOWBALL,
                 'H', Items.STICK);
 
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.ketchup, 1),
+                new ItemStack(ItemHandler.tomato, 3),
+                Items.GLASS_BOTTLE);
+
+        GameRegistry.addRecipe(new ItemStack(ItemHandler.hamburger, 1),
+                " B ",
+                "KM ",
+                " B ",
+                'B', Items.BREAD,
+                'K', ItemHandler.ketchup,
+                'M', Items.COOKED_BEEF);
+
+        GameRegistry.addRecipe(new ItemStack(ItemHandler.cheeseburger, 1),
+                " B ",
+                "KMC",
+                " B ",
+                'B', Items.BREAD,
+                'K', ItemHandler.ketchup,
+                'C', ItemHandler.cheese,
+                'M', Items.COOKED_BEEF);
+
     }
 
 }
