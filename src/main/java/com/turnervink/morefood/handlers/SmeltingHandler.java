@@ -11,6 +11,7 @@ public class SmeltingHandler {
     public static void init() {
 
         GameRegistry.addSmelting(ItemHandler.rawOnionRing, new ItemStack(ItemHandler.onionRing), 0);
+        GameRegistry.addSmelting(ItemHandler.rawFrenchFries, new ItemStack(ItemHandler.frenchFries), 0);
 
     }
 

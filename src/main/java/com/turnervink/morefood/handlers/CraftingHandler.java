@@ -3,6 +3,7 @@ package com.turnervink.morefood.handlers;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Created by turner on 2017-06-24.
@@ -16,6 +17,11 @@ public class CraftingHandler {
                 Items.WHEAT,
                 Items.MILK_BUCKET,
                 Items.EGG);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.rawFrenchFries, 1),
+                Items.POTATO,
+                new ItemStack(ItemHandler.kitchenKnife.setContainerItem(ItemHandler.kitchenKnife), 1));
+                // Add a WILDCARD for damage to the ItemStack to use any level of damage knife
 
         GameRegistry.addRecipe(new ItemStack(ItemHandler.beefSandwich, 2),
                 " B ",
