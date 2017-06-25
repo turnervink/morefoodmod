@@ -24,6 +24,7 @@ public class ItemHandler {
     public static Item porkSandwich;
     public static Item chickenSandwich;
     public static Item muttonSandwich;
+    public static Item popsicle;
 
     public static void init() {
 
@@ -39,6 +40,7 @@ public class ItemHandler {
         porkSandwich = new ItemBeefSandwich("pork_sandwich");
         chickenSandwich = new ItemBeefSandwich("chicken_sandwich");
         muttonSandwich = new ItemBeefSandwich("mutton_sandwich");
+        popsicle = new ItemPopsicle("popsicle", 1, 0.5F, false);
 
     }
 
@@ -56,6 +58,7 @@ public class ItemHandler {
         GameRegistry.register(porkSandwich);
         GameRegistry.register(chickenSandwich);
         GameRegistry.register(muttonSandwich);
+        GameRegistry.register(popsicle);
 
     }
 
@@ -73,6 +76,7 @@ public class ItemHandler {
         registerRender(porkSandwich);
         registerRender(chickenSandwich);
         registerRender(muttonSandwich);
+        registerRender(popsicle);
 
     }
 

@@ -59,6 +59,15 @@ public class CraftingHandler {
                 'M', Items.COOKED_MUTTON,
                 'T', ItemHandler.tomato);
 
+        GameRegistry.addRecipe(new ItemStack(ItemHandler.popsicle, 1),
+                "RS ",
+                "BS ",
+                " H ",
+                'R', new ItemStack(Items.DYE, 1, 1),
+                'B', new ItemStack(Items.DYE, 1, 4),
+                'S', Items.SNOWBALL,
+                'H', Items.STICK);
+
     }
 
 }
